@@ -1,7 +1,13 @@
 const Records = require('../Models/Record');
 const _ = require('lodash');
+
 class RecordsController {
-	static async getRecords(request, response, next) {
+	/**
+	 * GetRecords Handler
+	 * @param {ExpressRequest} request - Express Request Object
+	 * @param {ExpressResponse} response - Express Response Object
+	 */
+	static async getRecords(request, response) {
 		const { limit, offset } = request.pagination;
 		try {
 			const getData = await Records.aggregate([

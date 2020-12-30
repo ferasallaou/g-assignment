@@ -9,3 +9,4 @@ This app represents a small API which fetches records from a cloudDB.
 - Ask the project owner for the Env Variables which should be included in a `.env` file.
 - Run `npm run start`
 - To make sure the end Point is running, Make a **POST** call to /records.
+- To Test the App Run `npm run test`
